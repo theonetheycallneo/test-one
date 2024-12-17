@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "vercel-build": "./vercel/build.sh",
     "dev": "one dev",
     "dev:clean": "one dev --clean",
     "clean": "one clean",
