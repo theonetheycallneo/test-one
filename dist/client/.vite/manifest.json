@@ -1,0 +1,52 @@
+{
+  "_index-DInHUUtc.js": {
+    "file": "assets/index-DInHUUtc.js",
+    "name": "index",
+    "imports": [
+      "virtual:one-entry"
+    ]
+  },
+  "app/_layout.tsx": {
+    "file": "assets/_layout-D87iEh_e.js",
+    "name": "_layout",
+    "src": "app/_layout.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:one-entry",
+      "_index-DInHUUtc.js"
+    ],
+    "css": [
+      "assets/_layout-CZV-nxcx.css"
+    ]
+  },
+  "app/index.tsx": {
+    "file": "assets/index-9D_2hL1z.js",
+    "name": "index",
+    "src": "app/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:one-entry",
+      "_index-DInHUUtc.js"
+    ],
+    "css": [
+      "assets/index-CFdAdAGy.css"
+    ],
+    "assets": [
+      "assets/app-icon-DXK4YC68.png"
+    ]
+  },
+  "public/app-icon.png": {
+    "file": "assets/app-icon-DXK4YC68.png",
+    "src": "public/app-icon.png"
+  },
+  "virtual:one-entry": {
+    "file": "assets/_virtual_one-entry-CMfOHAUl.js",
+    "name": "_virtual_one-entry",
+    "src": "virtual:one-entry",
+    "isEntry": true,
+    "dynamicImports": [
+      "app/_layout.tsx",
+      "app/index.tsx"
+    ]
+  }
+}

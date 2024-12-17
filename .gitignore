@@ -8,7 +8,6 @@
 .turbo
 
 tmp
-dist
 node_modules
 
 *.tsbuildinfo
