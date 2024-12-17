@@ -7,6 +7,7 @@ export default {
     one({
       web: {
         defaultRenderMode: 'ssg',
+        deploy: 'vercel',
       },
 
       app: {
