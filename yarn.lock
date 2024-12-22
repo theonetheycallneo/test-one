@@ -5089,6 +5089,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/ncc@npm:^0.34.0":
+  version: 0.34.0
+  resolution: "@vercel/ncc@npm:0.34.0"
+  dependencies:
+    node-gyp: "npm:latest"
+  bin:
+    ncc: dist/ncc/cli.js
+  checksum: 10c0/fc64b3f2f79451ab0b0f91adaf76809940a4bc5ec9abca92e7095e298c0987f59bdeec281ff4846d7c8f4c88a854295498402778b9cf362f03e74d8a90d3e3fa
+  languageName: node
+  linkType: hard
+
 "@vitejs/plugin-react-swc@npm:^3.7.0":
   version: 3.7.2
   resolution: "@vitejs/plugin-react-swc@npm:3.7.2"
@@ -13569,6 +13580,7 @@ __metadata:
     "@tamagui/shorthands": "npm:^1.120.1"
     "@tamagui/vite-plugin": "npm:^1.120.1"
     "@types/react": "npm:^18.3.11"
+    "@vercel/ncc": "npm:^0.34.0"
     "@vxrn/color-scheme": "npm:1.1.345-1734464750388"
     expo: "npm:~51.0.28"
     expo-modules-core: "npm:^1.12.24"
