@@ -12,7 +12,7 @@ mkdir -p .vercel/output
 cp -a vercel/output/. .vercel/output
 
 # 4. Build project on Vercel.
-yarn build:web
+# yarn build:web
 
 ls -la ./dist
 cat ./dist/index.js
