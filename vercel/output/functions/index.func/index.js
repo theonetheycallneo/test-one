@@ -1,9 +1,9 @@
-import { handler } from '../../../../dist/index.js'
+import { handler as oneHandler } from '../../../../dist/index.js'
 
-export default async function(req, res) {
+export default async function handler(req, res) {
   const { url } = req
 
   console.log('Request to url:', url)
 
-  return handler(req, res)
+  return oneHandler(req, res)
 }
