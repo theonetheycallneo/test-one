@@ -14,6 +14,9 @@ cp -a vercel/output/. .vercel/output
 # 4. Build project on Vercel.
 yarn build:web
 
+ls -la ./dist
+cat ./dist/index.js
+
 # 5. Copy static files to `.vercel` directory.
 cp -a dist/client/. .vercel/output/static
 
