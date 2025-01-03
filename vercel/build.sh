@@ -24,6 +24,7 @@ cp -a dist/client/. .vercel/output/static
 
 # 6. Bundle render function to a single file.
 mv node_modules .vercel/output/functions/index.func/node_modules
+mv vercel/one .vercel/output/functions/index.func/node_modules/one
 cd .vercel/output/functions/index.func
 
 npx ncc build -e one --minify --out . index.js
@@ -33,11 +34,12 @@ ls -la node_modules/one
 
 mv node_modules ../../../../node_modules
 
+mv ../../../../node_modules/one node_modules/one
+
 ls -la node_modules/one
 ls -la
 cat package.json
-mv ../../../package.json package.json
-cat package.json
+
 # https://github.com/vercel/ncc/issues/791
 # gsed -i 's/module=>{module.exports=eval("require")("")}/module=>{module.exports={}}/g' index.js 
 # npx ncc build --out . index.js
