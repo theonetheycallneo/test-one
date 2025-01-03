@@ -23,14 +23,12 @@ cp -a vercel/output/. .vercel/output
 cp -a dist/client/. .vercel/output/static
 
 # 6. Bundle render function to a single file.
+ls -la node_modules/one
 mv node_modules .vercel/output/functions/index.func/node_modules
 mv vercel/one .vercel/output/functions/index.func/node_modules/one
 cd .vercel/output/functions/index.func
 
-npx ncc build -e one --minify --out . index.js
-
-ls -la node_modules
-ls -la node_modules/one
+npx ncc build --minify --out . index.js
 
 mv node_modules ../../../../node_modules
 mkdir -p node_modules
