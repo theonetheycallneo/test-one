@@ -26,10 +26,10 @@ cp -a dist/client/. .vercel/output/static
 mv node_modules .vercel/output/functions/index.func/node_modules
 cd .vercel/output/functions/index.func
 
-npx ncc build --minify --out . index.js
+npx ncc build -e one --minify --out . index.js
 
 mv node_modules ../../../../node_modules
-mv index.js index.cjs
+mv ../../../../node_modules/one node_modules/one
 ls -la
 cat package.json
 # https://github.com/vercel/ncc/issues/791
