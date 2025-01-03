@@ -1,0 +1,6 @@
+{
+  "name": "one-vercel-prod",
+  "dependencies": {
+    "one": "1.1.345-1734464750388"
+  }
+}
