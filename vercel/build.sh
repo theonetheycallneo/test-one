@@ -27,6 +27,7 @@ mv node_modules .vercel/output/functions/index.func/node_modules
 cd .vercel/output/functions/index.func
 
 npx ncc build --minify --out . index.js
+
 mv node_modules ../../../../node_modules
 
 ls -la
