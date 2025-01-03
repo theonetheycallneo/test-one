@@ -1,10 +1,9 @@
-// import { handler as oneHandler } from '../../../../dist/index.js'
+import { handler as oneHandler } from '../../../../dist/index.js'
 
 export default async function handler(req, res) {
   const { url } = req
 
   console.log('Request to url:', url)
 
-  // return await oneHandler(req, res)
-  return { status: 200 }
+  return await oneHandler(req, res)
 }
