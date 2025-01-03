@@ -29,7 +29,7 @@ cd .vercel/output/functions/index.func
 npx ncc build --minify --out . index.js
 
 mv node_modules ../../../../node_modules
-
+mv index.js index.cjs
 ls -la
 cat package.json
 # https://github.com/vercel/ncc/issues/791
