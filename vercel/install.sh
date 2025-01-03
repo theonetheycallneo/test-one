@@ -9,9 +9,7 @@ rm -rf node_modules
 yarn workspaces focus --production
 
 # 3. Remove and prune uncessary files inside node_modules directory
-
+npx clean-modules clean '**/*.d.ts' '**/@types/**' '!**/*.png' '!**/*.xls' '!**/*.ppt' '!**/*.rtf' -y
 # npx modclean --patterns="default:safe,default:caution" --additional-patterns="*.xls?(x),*.ppt?(x),*.rtf" --ignore="validate-npm-license,readme*"
-# npx clean-modules clean '**/*.d.ts' '**/@types/**' '!**/*.png' '!**/*.xls' '!**/*.ppt' '!**/*.rtf' -y
-
 # du -sh ./node_modules/* | sort -nr | grep '\dM.*'
 

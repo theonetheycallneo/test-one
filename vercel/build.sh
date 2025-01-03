@@ -22,8 +22,6 @@ cat ./dist/index.js
 # 5. Copy static files to `.vercel` directory.
 cp -a dist/client/. .vercel/output/static
 
-cp -a dist/client/. .vercel/output/static
-
 # 6. Bundle render function to a single file.
 mv node_modules .vercel/output/functions/index.func/node_modules
 cd .vercel/output/functions/index.func

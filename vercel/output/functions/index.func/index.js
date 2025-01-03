@@ -5,5 +5,5 @@ export default async function handler(req, res) {
 
   console.log('Request to url:', url)
 
-  return await oneHandler(req, res)
+  return oneHandler(req, res)
 }
