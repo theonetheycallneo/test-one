@@ -2,6 +2,8 @@
 # Deploy using the Vercel Build Output API.
 # https://vercel.com/docs/build-output-api/v3
 
+set -x # set -o xtrace
+
 # 1. Remove existing `.vercel` directory in case it exists.
 rm -rf .vercel
 
