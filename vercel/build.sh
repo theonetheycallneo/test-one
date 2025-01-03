@@ -30,7 +30,10 @@ npx ncc build -e one --minify --out . index.js
 
 mv node_modules ../../../../node_modules
 mv ../../../../node_modules/one node_modules/one
+ls -la node_modules/one
 ls -la
+cat package.json
+mv ../../../package.json package.json
 cat package.json
 # https://github.com/vercel/ncc/issues/791
 # gsed -i 's/module=>{module.exports=eval("require")("")}/module=>{module.exports={}}/g' index.js 
