@@ -8,6 +8,7 @@ export default {
       web: {
         defaultRenderMode: 'ssg',
         deploy: 'vercel',
+        preferRelative: true
       },
 
       app: {
