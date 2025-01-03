@@ -1,6 +1,6 @@
 {
   "buildCommand": "./vercel/build.sh",
-  "installCommand": "yarn workspaces focus --production",
+  "installCommand": "./vercel/install.sh",
   "rewrites": [
     {
       "source": "/(.*)",

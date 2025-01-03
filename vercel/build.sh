@@ -24,8 +24,8 @@ cat ./dist/index.js
 cp -a dist/client/. .vercel/output/static
 
 # 6. Bundle render function to a single file.
-# mv node_modules .vercel/output/functions/index.func/node_modules
-# cd .vercel/output/functions/index.func
-# npx ncc build --minify --out . index.js
+mv node_modules .vercel/output/functions/index.func/node_modules
+cd .vercel/output/functions/index.func
+npx ncc build --minify --out . index.js
 # npx ncc build --out . index.js
-npx ncc build --out .vercel/output/functions/index.func .vercel/output/functions/index.func/index.js
+# npx ncc build --out .vercel/output/functions/index.func .vercel/output/functions/index.func/index.js
