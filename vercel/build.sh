@@ -28,8 +28,11 @@ cd .vercel/output/functions/index.func
 
 npx ncc build -e one --minify --out . index.js
 
+ls -la node_modules
+ls -la node_modules/one
+
 mv node_modules ../../../../node_modules
-mv ../../../../node_modules/one node_modules/one
+
 ls -la node_modules/one
 ls -la
 cat package.json
