@@ -16,8 +16,8 @@ cp -a vercel/output/. .vercel/output
 # 4. Build project on Vercel.
 # yarn build:web
 
-ls -la ./dist
-cat ./dist/index.js
+# ls -la ./dist
+# cat ./dist/index.js
 
 # 5. Copy static files to `.vercel` directory.
 cp -a dist/client/. .vercel/output/static
@@ -28,5 +28,9 @@ cd .vercel/output/functions/index.func
 
 npx ncc build --minify --out . index.js
 mv node_modules ../../../../node_modules
+
+ls -la
+# https://github.com/vercel/ncc/issues/791
+gsed -i 's/module=>{module.exports=eval("require")("")}/module=>{module.exports={}}/g' index.js 
 # npx ncc build --out . index.js
 # npx ncc build --out .vercel/output/functions/index.func .vercel/output/functions/index.func/index.js
