@@ -26,10 +26,6 @@ cp -a dist/client/. .vercel/output/static
 # 6. Bundle render function to a single file.
 mv node_modules .vercel/output/functions/index.func/node_modules
 cd .vercel/output/functions/index.func
-du -sh ./node_modules/* | sort -nr | grep '\dM.*'
-# npx modclean --patterns="default:safe,default:caution" --additional-patterns="*.xls?(x),*.ppt?(x),*.rtf" --ignore="validate-npm-license,readme*"
-npx clean-modules "**/*.d.ts" "**/@types/**" "!**/*.png" "!**/*.xls" "!**/*.ppt" "!**/*.rtf"
-du -sh ./node_modules/* | sort -nr | grep '\dM.*'
 
 npx ncc build --minify --out . index.js
 # npx ncc build --out . index.js
